@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first HTML page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li>CONTACTAME</li>
-                <li>MIS PROYECTOS</li>
-                <li>SOBRE MI</li>
+                <li class="nav-list">CONTACTAME</li>
+                <li class="nav-list">MIS PROYECTOS</li>
+                <li class="nav-list">SOBRE MI</li>
             </ul>
         </nav>
-    </header> <hr>
+    </header>
+    <hr>
     <main>
-        <section>
+        <section id="hello">
             <h1>¡HELLO WORLD!</h1>
-            <P>Mi nombre es Miriam Bautista, una entusiasta autodidacta en el aprendizaje del desarrollo web. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate sit, eius inventore quasi fugit officiis minima quisquam nostrum cum blanditiis laudantium modi vitae quam necessitatibus velit unde ratione enim?</P>
-        </section> <hr>
-        <section>
-            <div>
-                <a href="#"><img src="imagenes/blog.png" alt="" width="400" height="300">
-                <p>Mi blog personal</p></a>
-            </div>
-            <div>
-                <a href="#"><img src="imagenes/calculadora.png" alt="" width="400" height="300">
-                <p> Calculadora</p></a>
-            </div>
-            <div>
-                <a href="#"><img src="imagenes/app music.jpg" alt="" width="400" height="300">
-                <p>Reproductor de música</p></a>
-            </div>
-        </section> <hr>
-        <section> 
-        <fieldset>
-            <legend>
-                Dejame tus datos:
-            </legend>
-            <form action="">
-                <label for="name">Nombres</label>
-                <input type="text" id="name"> <br>
-                <label for="apellido">Apellidos</label>
-                <input type="text" id="apellido"> <br>
-                <label for="email">Email</label>
-                <input type="email" id="email">  <br>
-                <label for="telefono">Teléfono</label>
-                <input type="number" id="telefono">
-            </form>
-        </fieldset>
-        </section> <hr>
+            <P>Mi nombre es Miriam Bautista, una entusiasta autodidacta en el aprendizaje del desarrollo web. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cupiditate sit, eius inventore quasi fugit
+                officiis minima quisquam nostrum cum blanditiis laudantium modi vitae quam necessitatibus velit unde
+                ratione enim?</P>
+        </section>
+        <hr>
+        <section id="proyects">
+            <h3>MIS PROYECTOS</h3>
+            <article>
+                <div>
+                    <a href="#"><img src="imagenes/blog.png" alt="" width="400" height="450">
+                        <p>Mi blog personal</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#"><img src="imagenes/calculadora.png" alt="" width="400" height="450">
+                        <p> Calculadora</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#"><img src="imagenes/app music.jpg" alt="" width="400" height="450">
+                        <p>Reproductor de música</p>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="form">
+            <fieldset>
+                <legend>
+                    Dejame tus datos:
+                </legend>
+                <form action="">
+                    <label for="name">Nombres
+                    <input type="text" id="name"></label> <br>
+                    <label for="apellido">Apellidos
+                    <input type="text" id="apellido"></label> <br>
+                    <label for="email">Email
+                    <input type="email" id="email"></label> <br>
+                    <label for="telefono">Teléfono
+                    <input type="number" id="telefono"></label> <br>
+                    <textarea name="msg" id="msg" placeholder="Dejame un comentario si deseas ..." rows="5"
+                        cols="5"></textarea> <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </section>
+        <hr>
     </main>
     <footer>
         <p>web page made by @Miriam Bautista</p>
     </footer>
 </body>
+
 </html>
